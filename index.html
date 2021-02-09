@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Eduardo Castaneda</title>
+    <title>Ayma Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;500&display=swap"
       rel="stylesheet"
     />
+
     <style>
       html {
         height: 100%;
         margin: 0;
         font-family: Helvetica;
       }
+
       body {
         margin: 0;
         color: white;
@@ -25,28 +27,120 @@
         justify-content: center;
         text-align: center;
       }
-      h1 {
-        font-size: 100px;
-        font-family: 'Satisfy', cursive;
-        margin: 0;
+
+      .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
       }
+
+      h1 {
+        font-size: 65px;
+        font-family: 'Josefin Sans', cursive;
+        margin: 0;
+        font-weight: 100;
+      }
+
       span {
         position: absolute;
-        bottom: 8px;
-        white-space: nowrap;
-        right: 0;
+        bottom: -7px;
+        right: 7px;
+        font-family: 'Josefin Sans', cursive;
+        font-weight: 500;
       }
+
       .logo {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: relative;
+      }
+
+      .svg-logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 60px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .main {
+          flex-direction: row;
+        }
+
+        .svg-logo {
+          margin-right: 50px;
+          margin-bottom: 0;
+          width: 180px;
+          height: 180px;
+        }
+
+        h1 {
+          font-size: 100px;
+        }
       }
     </style>
   </head>
+
   <body>
     <div class="main">
+      <svg
+        class="svg-logo"
+        width="130px"
+        height="130px"
+        viewBox="0 0 440 440"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+        <title>Group</title>
+        <desc>Created with Sketch.</desc>
+        <defs>
+          <rect id="path-1" x="0" y="0" width="440" height="440" rx="3"></rect>
+        </defs>
+        <g
+          id="Page-1"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <g id="Group">
+            <g id="Rectangle">
+              <use
+                fill="transparent"
+                fill-rule="evenodd"
+                xlink:href="#path-1"
+              ></use>
+              <rect
+                stroke="#FFFFFF"
+                stroke-width="10"
+                x="2"
+                y="2"
+                width="436"
+                height="436"
+                rx="3"
+              ></rect>
+            </g>
+            <path
+              d="M136.589804,363.069099 C140.481141,362.224979 142.770455,359.198388 143.457746,353.989324 C150.014946,179.474745 158.264095,74.9947325 180.994186,74.9947325 C204.413311,74.9947325 245.105779,171.6117 303.071592,364.845634"
+              id="Path-2"
+              stroke="#FFFFFF"
+              stroke-width="10"
+            ></path>
+            <path
+              d="M253,210 C274.107418,112.942699 290.797949,68.2193965 303.071592,75.8300915"
+              id="Path-3"
+              stroke="#FFFFFF"
+              stroke-width="10"
+            ></path>
+          </g>
+        </g>
+      </svg>
       <div class="logo">
-        <h1>Aymara</h1>
-        <span>The future is near you</span>
+        <h1>Ayma</h1>
+        <span>Solutions</span>
       </div>
     </div>
   </body>
