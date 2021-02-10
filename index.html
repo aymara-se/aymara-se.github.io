@@ -55,7 +55,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        opacity: 0;
         position: relative;
+        animation: op 0.5s ease-in-out forwards;
+        animation-delay: 0.8s;
       }
 
       .svg-logo {
@@ -81,6 +84,38 @@
           font-weight: 100;
         }
       }
+
+      .a-path {
+        stroke-dasharray: 619;
+        stroke-dashoffset: 619;
+        animation: dash 1s ease-in-out forwards;
+      }
+
+      .path-rec {
+        stroke-dasharray: 1755;
+        stroke-dashoffset: 1755;
+        animation: dash 3s ease-in-out forwards;
+        animation-delay: 1s;
+      }
+
+      .y-path {
+        stroke-dasharray: 149;
+        stroke-dashoffset: 149;
+        animation: dash 0.5s ease-in-out forwards;
+        animation-delay: 0.8s;
+      }
+
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      @keyframes op {
+        to {
+          opacity: 100;
+        }
+      }
     </style>
   </head>
 
@@ -99,7 +134,15 @@
         <title>Group</title>
         <desc>Created with Sketch.</desc>
         <defs>
-          <rect id="path-1" x="0" y="0" width="440" height="440" rx="3"></rect>
+          <rect
+            id="path-1"
+            class="path-rec"
+            x="0"
+            y="0"
+            width="440"
+            height="440"
+            rx="3"
+          ></rect>
         </defs>
         <g
           id="Page-1"
@@ -128,12 +171,14 @@
             <path
               d="M136.589804,363.069099 C140.481141,362.224979 142.770455,359.198388 143.457746,353.989324 C150.014946,179.474745 158.264095,74.9947325 180.994186,74.9947325 C204.413311,74.9947325 245.105779,171.6117 303.071592,364.845634"
               id="Path-2"
+              class="a-path"
               stroke="#FFFFFF"
               stroke-width="10"
             ></path>
             <path
               d="M253,210 C274.107418,112.942699 290.797949,68.2193965 303.071592,75.8300915"
               id="Path-3"
+              class="y-path"
               stroke="#FFFFFF"
               stroke-width="10"
             ></path>
